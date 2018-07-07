@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Akrobat';
+    src: url('../fonts/Akrobat-Black.otf');
+    src: local('Akrobat Black'), local('Akrobat-Black'), 
+         url('../fonts/Akrobat-Black.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/akrobat-black-webfont.woff2') format('woff2'),
+         url('../fonts/akrobat-black-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: url('../fonts/Akrobat-Bold.otf');
+    src: local('Akrobat Bold'), local('Akrobat-Bold'), 
+         url('../fonts/Akrobat-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/akrobat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/akrobat-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.premium-header {
+    padding: 27px 60px 26px 40px;
+    width: 100%;
+    background-color: #ffffff;
+    order: 1;
+}
+
+.premium-main {
+    position: relative;
+    order: 2;
+}
+
+.premium-header__nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.offer {
+    min-height: 1080px;
+    background-color: #3d0d4f;
+    background-image: url("../img/background-offer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.offer::before {
+    content: "";
+    height: 1080px;
+    width: 60%;
+    background-color: #3d0d4f;
+    opacity: 0.85;
+    padding-left: 200px;
+    transform: skew(-16deg);
+    margin-left: -262px; 
+    position: absolute;    
+}
+
+/* .offer-container::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-left: 0 solid #0000;
+    border-right: 335px solid #0000;
+    border-top: 1080px solid #3d0d4f;
+    position: absolute;
+    left: 45%;
+    top: 0;
+} */
+
+/* .offer__content {
+    transform: skew(16deg);      
+} */
+
+.offer-container {
+    padding-left: 235px;
+}
+
+.offer__content{
+    position: absolute;
+}
+
+.offer__title {
+    color: #e1ced9;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.offer__h1 {
+    width: 740px;
+    color: #ffffff;
+    font-family: "Akrobat", Arial, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 76px;
+    line-height: 90px;
+}
+
+.offer__text {
+    color: #e1ced9;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    width: 600px; 
+}
+
+.offer-container a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.learn-more {
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    padding: 16px 32px;
+    text-transform: uppercase;
+}
