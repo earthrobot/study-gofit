@@ -30,6 +30,28 @@ body {
     background-color: #45054f;
 }
 
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -39,20 +61,77 @@ body {
   }
 
 .premium-header {
-    padding: 27px 60px 26px 40px;
-    width: 100%;
-    background-color: #0000;
-    order: 1;
-}
-
-.premium-main {
-    position: relative;
-    order: 2;
+    padding: 27px 40px 26px;
 }
 
 .premium-header__nav {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+}
+
+.premium-header__logo {
+    margin-right: 90px;
+}
+
+.premium-header__nav a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Akrobat", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    padding-left: 34px;
+}
+
+.premium-header__main-link {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.premium-header__main-link::before {
+    content: "";
+    width: 19px;
+    height: 10px;
+    background: url(../img/arrow.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+.enter-navigation {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-navigation a {
+    text-transform: uppercase;
+    font-family: "Akrobat", Arial, sans-serif;
+    font-weight: 700;
+}
+
+.sign-up {
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    padding: 13px 18px;
+}
+
+.login {
+    border: 1px solid transparent;
+    padding: 13px 20px;
+}
+
+.premium-main {
+    position: relative;
+    order: 2;
 }
 
 .intro {
@@ -129,7 +208,6 @@ body {
 }
 
 .intro-container a {
-    text-decoration: none;
     color: #ffffff;
 }
 
@@ -285,11 +363,116 @@ body {
 
 .footer {
     background-color: #303030;
-    min-height: 388px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 105px 0 58px 0;
+    /* min-width: 1920px; */
 }
 
 .footer-container {
     width: 1088px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer__partners {
+    padding: 0;
+    margin: 0;
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 77px;
+}
+
+.footer-partner__listing {
+    list-style: none;
+    width: 150px;
+    height: 94px;
+    cursor: pointer;
+}
+
+.footer-partner {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.footer-partner__kengoroo {
+    background-image: url("../img/kengoroo.png");
+}
+
+.footer-partner__sis {
+    background-image: url("../img/sis.png");
+}
+
+.footer-partner__garmin {
+    background-image: url("../img/garmin.png");
+}
+
+.footer-partner__rr {
+    background-image: url("../img/rr.png");
+}
+
+.footer-partner__xsport {
+    background-image: url("../img/xsport.png");
+}
+
+.footer-partner__runtlt {
+    background-image: url("../img/run_tlt.png");
+}
+
+.footer__copyright {
+    line-height: 32px;
+    margin-bottom: 19px;
+}
+
+.footer__social {
+    padding: 0;
+    margin: 0;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social__listings {
+    list-style: none;
+    width: 18px;
+    height: 19px;
+    cursor: pointer;
+}
+
+.social__listing {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;  
+}
+
+.listing__vk {
+    background-image: url("../img/vk.png");
+}
+
+.listing__fb {
+    background-image: url("../img/fb.png");
+}
+
+.listing__ig {
+    background-image: url("../img/ig.png");
+}
+
+.listing__tg {
+    background-image: url("../img/tg.png");
+}
+
+.listing__st {
+    background-image: url("../img/st.png");
 }
